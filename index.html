@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reproductor de Notas Musicales IA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/tone@latest/build/Tone.js"></script>
+</head>
+<body>
+  <h1>🎼 Intérprete Musical IA</h1>
+
+  <textarea id="notaInput" placeholder="Escribe aquí tus notas: Ej. C4 D4 E4 F4 G4"></textarea>
+  <button onclick="reproducirNotas()">▶️ Reproducir</button>
+
+  <div>
+    <label for="instrumento">🎵 Instrumento:</label>
+    <select id="instrumento">
+      <option value="Synth">Sintetizador</option>
+      <option value="AMSynth">Piano</option>
+      <option value="FMSynth">Guitarra eléctrica</option>
+      <option value="MembraneSynth">Percusión</option>
+    </select>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
