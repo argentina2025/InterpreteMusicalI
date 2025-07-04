@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🎼 Reproductor Musical IA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/tone@latest/build/Tone.js"></script>
+</head>
+<body>
+  <h1>🎧 Intérprete Musical IA</h1>
+
+  <textarea id="notaInput" placeholder="Escribe las notas aquí: Ejemplo: C4 E4 G4 F4 A4"></textarea>
+  
+  <div class="panel">
+    <label for="instrumento">🎵 Instrumento:</label>
+    <select id="instrumento">
+      <option value="Synth">Sintetizador</option>
+      <option value="AMSynth">Piano</option>
+      <option value="FMSynth">Guitarra eléctrica</option>
+      <option value="MembraneSynth">Percusión</option>
+    </select>
+  </div>
+
+  <div class="botones">
+    <button onclick="reproducirNotas()">▶️ Reproducir</button>
+    <button onclick="detenerNotas()">⏹️ Detener</button>
+  </div>
+
+  <footer>
+    <p>Proyecto creado por <strong>argentina2025</strong> usando Tone.js 🎼</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
